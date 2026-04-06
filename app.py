@@ -13,18 +13,8 @@ from docx.shared import Inches
 # ============================
 # Configuration
 # ============================
-st.subheader("AutoChi: Automated Test for Proportions:")
-#APP_TITLE = "AutoChi: Automated Test for Proportions"
-#DEFAULT_PREVIEW_ROWS = 15
-st.text("AutoChi is a Streamlit-based statistical analysis app for automated chi-square analysis of proportions with one or two categorical factors and two response-count columns.")
-st.subheader("Expected input structure:")
-st.markdown("""
-The app assumes the uploaded CSV/XLSX file has this layout:
-- First **1 or 2 columns**: categorical factor column(s)
-- Last **2 columns**: response-count columns
-- First row: variable names""")
-
-
+APP_TITLE = "AutoChi: Automated Test for Proportions"
+DEFAULT_PREVIEW_ROWS = 15
 
 @dataclass
 class DetectionConfig:
@@ -480,6 +470,17 @@ def build_docx_report(
 # ============================
 st.set_page_config(APP_TITLE, layout="wide")
 st.title(APP_TITLE)
+
+
+st.subheader("AutoChi: Automated Test for Proportions:")
+st.text("AutoChi is a Streamlit-based statistical analysis app for automated chi-square analysis of proportions with one or two categorical factors and two response-count columns.")
+st.subheader("Expected input structure:")
+st.markdown("""
+The app assumes the uploaded CSV/XLSX file has this layout:
+- First **1 or 2 columns**: categorical factor column(s)
+- Last **2 columns**: response-count columns
+- First row: variable names""")
+
 
 uploaded = st.file_uploader("Upload CSV or XLSX", ["csv", "xlsx"])
 if not uploaded:
