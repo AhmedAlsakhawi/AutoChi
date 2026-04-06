@@ -14,16 +14,16 @@ from docx.shared import Inches
 # Configuration
 # ============================
 APP_TITLE = "AutoChi: Automated Test for Proportations"
-st.subheader("Chi-square Results")
+DEFAULT_PREVIEW_ROWS = 15
+
 st.text("AutoChi is a Streamlit-based statistical analysis app for automated chi-square analysis of proportions with one or two categorical factors and two response-count columns.")
-st.markdown("## Expected input structure")
+st.subheader("Expected input structure:")
 st.markdown("""
 The app assumes the uploaded CSV/XLSX file has this layout:
 - First **1 or 2 columns**: categorical factor column(s)
 - Last **2 columns**: response-count columns
 - First row: variable names""")
 
-DEFAULT_PREVIEW_ROWS = 15
 
 
 @dataclass
