@@ -15,7 +15,7 @@ from docx.shared import Inches
 # ============================
 APP_TITLE = "AutoChi: Automated Test for Proportations"
 st.subheader("Chi-square Results")
-st.text(AutoChi is a Streamlit-based statistical analysis app for automated chi-square analysis of proportions with one or two categorical factors and two response-count columns.)
+st.text("AutoChi is a Streamlit-based statistical analysis app for automated chi-square analysis of proportions with one or two categorical factors and two response-count columns.")
 st.markdown("## Expected input structure")
 st.markdown("""
 The app assumes the uploaded CSV/XLSX file has this layout:
