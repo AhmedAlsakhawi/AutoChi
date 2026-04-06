@@ -13,7 +13,7 @@ from docx.shared import Inches
 # ============================
 # Configuration
 # ============================
-APP_TITLE = "Factor / Response Analyzer (Excel / CSV)"
+APP_TITLE = "AutoChi: Automated Test for Proportations"
 DEFAULT_PREVIEW_ROWS = 15
 
 
