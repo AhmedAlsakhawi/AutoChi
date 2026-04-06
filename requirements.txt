@@ -1,0 +1,8 @@
+streamlit
+pandas
+numpy
+openpyxl
+python-docx
+scipy
+matplotlib
+graphviz
