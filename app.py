@@ -13,9 +13,9 @@ from docx.shared import Inches
 # ============================
 # Configuration
 # ============================
-APP_TITLE = "AutoChi: Automated Test for Proportations"
-DEFAULT_PREVIEW_ROWS = 15
-
+st.subheader("AutoChi: Automated Test for Proportions:")
+#APP_TITLE = "AutoChi: Automated Test for Proportions"
+#DEFAULT_PREVIEW_ROWS = 15
 st.text("AutoChi is a Streamlit-based statistical analysis app for automated chi-square analysis of proportions with one or two categorical factors and two response-count columns.")
 st.subheader("Expected input structure:")
 st.markdown("""
