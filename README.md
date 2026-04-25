@@ -1,5 +1,7 @@
 # AutoChi
 
+(https://autochi.streamlit.app)[https://autochi.streamlit.app]
+
 AutoChi is a Streamlit-based statistical analysis app for automated chi-square analysis of proportions with one or two categorical factors and two response-count columns.
 
 ## Expected input structure
